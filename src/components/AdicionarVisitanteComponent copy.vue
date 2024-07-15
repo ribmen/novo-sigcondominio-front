@@ -9,7 +9,7 @@
         <input type="text" id="nome" v-model="novoVisitante.nome" required /><br><br>
         
         <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" v-model="novoVisitante.cpf" required /><br><br>
+        <input type="text" id="cpf" v-model="novoVisitante.cpf" v-cpf-mask required /><br><br>
         
         <button type="submit">Adicionar</button>
       </form>

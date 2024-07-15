@@ -23,7 +23,7 @@
     </thead>
     <tbody>
       <tr
-        v-for="visitante in visitantes"
+        v-for="visitante in visitantes.slice().reverse()"
         :key="visitante.id"
       >
         <td class="name-column">{{ visitante.nome }}</td>

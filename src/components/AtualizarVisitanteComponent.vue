@@ -33,6 +33,12 @@
           <div class="col-auto">
             <input type="text" id="cpf" class="form-control" v-model="visitante.cpf" required />
           </div>
+          <div class="col-auto">
+            <label for="destino" class="col-form-label">Destino: </label>
+          </div>
+          <div class="col-auto">
+            <input type="text" id="destino" class="form-control" v-model="visitante.destino" required />
+          </div>
 
           <div>
             <button type="submit" class="btn btn-secondary">Atualizar</button>

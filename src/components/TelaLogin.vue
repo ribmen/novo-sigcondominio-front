@@ -2,7 +2,7 @@
   <div class="container-fluid d-flex align-items-center justify-content-center vh-100">
     <div class="form-signin">
       <form @submit.prevent="handleSubmit">
-        <img class="mb-4" src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+        <img class="mb-4" src="../assets/logo.png" alt="" width="72" height="57">
         <h1 class="h3 mb-3 fw-normal bold">Login</h1>
 
         <div class="form-floating">

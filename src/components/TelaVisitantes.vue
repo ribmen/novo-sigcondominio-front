@@ -34,7 +34,9 @@
             </div>
             <div class="card-body">
               <DeleteVisitanteComponent/><br><br>
-              <AtualizarVisitanteComponent/>
+              <DeletePrestadorServicoComponent/><br><br>
+              <AtualizarVisitanteComponent/><br>
+              <AtualizarPrestadorServicoComponent/><br><br>
             </div>
           </div>
         </div>
@@ -61,15 +63,19 @@
 
 <script>
 import AtualizarVisitanteComponent from './AtualizarVisitanteComponent.vue';
+import AtualizarPrestadorServicoComponent from './AtualizarPrestadorServicoComponent.vue';
 import BuscarVisitanteComponent from './BuscarVisitanteComponent.vue';
 import DeleteVisitanteComponent from './DeleteVisitanteComponent.vue';
+import DeletePrestadorServicoComponent from './DeletePrestadorServicoComponent.vue'
 
 export default {
   name: 'TelaVisitantes',
   components: {
     BuscarVisitanteComponent,
     AtualizarVisitanteComponent,
-    DeleteVisitanteComponent
+    AtualizarPrestadorServicoComponent,
+    DeleteVisitanteComponent,
+    DeletePrestadorServicoComponent
   },
   data() {
     return {

@@ -24,7 +24,7 @@
           </div>
           <div class="form-group col-md-6">
             <label for="inputPassword4">CPF</label><br>
-            <input type="text" id="cpf" v-model="novoVisitante.cpf" required class="form-control" placeholder="Insira aqui o CPF"><br>
+            <input type="text" id="cpf" v-model="novoVisitante.cpf"  v-directive="cpfMask" required class="form-control" placeholder="Insira aqui o CPF"><br>
           </div>
         </div>
         <div class="form-group col-md-6">

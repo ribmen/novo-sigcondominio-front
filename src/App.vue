@@ -4,7 +4,7 @@
         <div class="d-flex flex-wrap align-items-center justify-content-between">
           <!-- Logo e título -->
           <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <img src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="Bootstrap Logo" width="30" height="24">
+            <img src="./assets/logo.png" alt="SIGCONDOMINIO Logo" width="30" height="24">
             <span class="fs-4 mx-2">SIGCONDOMÍNIO</span>
           </a>
           
@@ -44,7 +44,7 @@
         <v-list density="compact" nav>
           <v-list-item prepend-icon="mdi-folder" title="Contatos" href="https://wa.me/5584987072404" target="_blank" value="myfiles"></v-list-item>
           <v-list-item prepend-icon="mdi-account-multiple" title="Denunciar" href="https://wa.me/5584987072404" target="_blank" value="shared"></v-list-item>
-          <v-list-item prepend-icon="mdi-star" title="Outras ações" value="starred"></v-list-item>
+          <router-link to="/adicionarVisitantes"><v-list-item prepend-icon="mdi-star" title="Outras ações" value="starred"></v-list-item></router-link>
         </v-list>
       </v-navigation-drawer>
 

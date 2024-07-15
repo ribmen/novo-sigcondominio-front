@@ -6,10 +6,11 @@ import * as directives from 'vuetify/directives'
 import App from './App.vue';
 import router from './router';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import cpfMask from './directives/cpfMask';
 
 const vuetify = createVuetify({
   components,
   directives,
 })
 
-createApp(App).use(router).use(vuetify).mount('#app');
+createApp(App).use(router).directive('cpf-mask', cpfMask).use(vuetify).mount('#app');

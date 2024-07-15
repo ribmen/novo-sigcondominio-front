@@ -6,6 +6,20 @@
            <h2 class="card-title">Liberar entrada</h2>
          </div>
 
+         <!-- <div class="form-check">
+          <h3>Novo acesso</h3>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" v-model="selectedOption" value="visitante">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Visitante
+          </label>
+          </div>
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" v-model="selectedOption" value="prestadorServico">
+          <label class="form-check-label" for="flexRadioDefault2">
+            Prestador de serviço
+          </label>
+        </div> -->
+
 
         <div class="form-check topForm">
           <h3>Possui cadastro?</h3>
@@ -23,7 +37,8 @@
 
         <div v-if="selectedOption === 'true'">
           <h3></h3>
-          <BuscarVisitanteComponent/>
+          <BuscarVisitanteComponent/><br>
+          <BuscarPrestadorServicoComponent/>
           <br>
           <button class="btn btn-primary" @click="ocultarFormulario">Fechar</button>
         </div>
@@ -40,6 +55,7 @@
 
 <script>
 import BuscarVisitanteComponent from './BuscarVisitanteComponent.vue'
+import BuscarPrestadorServicoComponent from './BuscarPrestadorServicoComponent.vue';
 import AdicionarVisitanteTesteComponent from './AdicionarVisitanteTesteComponent.vue';
 import axios from 'axios';
 
@@ -52,7 +68,8 @@ export default {
   },
   components: {
     AdicionarVisitanteTesteComponent,
-    BuscarVisitanteComponent
+    BuscarVisitanteComponent,
+    BuscarPrestadorServicoComponent
   }, 
   methods: {
     async listarVisitantes() {

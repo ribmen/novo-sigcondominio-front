@@ -29,7 +29,7 @@
     </thead>
     <tbody>
       <tr
-        v-for="prestador in prestadorServico"
+        v-for="prestador in prestadorServico.slice().reverse()"
         :key="prestador.id"
       >
         <td class="nome">{{ prestador.nome }}</td>
