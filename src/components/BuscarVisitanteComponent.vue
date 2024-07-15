@@ -1,11 +1,10 @@
 <template>
-  <h1>Buscar visitante por CPF</h1>
 
   <nav class="navbar navbar-light bg-light justify-content-between">
-    <a class="navbar-brand">Buscar visitante por CPF</a>
-    <form @submit.prevent="buscarVisitantePorCpf" class="form-inline d-flex">
-    <input class="form-control mr-sm-2" type="search" id="cpfBuscar" v-model="cpfBuscar" required placeholder="Insira aqui o CPF" aria-label="Search"/>
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+    <a class="navbar-brand"><h3 class="search">Buscar visitante por CPF</h3></a>
+    <form @submit.prevent="buscarVisitantePorCpf" class="form-inline d-flex searchAsWell">
+      <input class="form-control mr-sm-2" type="search" id="cpfBuscar" v-model="cpfBuscar" required placeholder="Insira aqui o CPF" aria-label="Search"/>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
     </form>
   </nav>
 
@@ -56,5 +55,12 @@ export default {
   .form-inline .form-control {
     width: auto;
     flex: 1;
+  }
+
+  .search {
+    margin-left: 30px;
+  }
+  .searchAsWell {
+    margin-right: 30px;
   }
 </style>

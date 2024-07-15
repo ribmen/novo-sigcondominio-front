@@ -7,7 +7,7 @@
 
     <thead>
       <tr>
-        <th class="text-left">
+        <th class="text-left nome">
           Nome
         </th>
         <th class="text-middle">
@@ -22,6 +22,9 @@
         <th class="text-left">
           Destino
         </th>
+        <th class="text-left dataHora">
+          Data e Hora
+        </th>
       </tr>
     </thead>
     <tbody>
@@ -29,11 +32,12 @@
         v-for="prestador in prestadorServico"
         :key="prestador.id"
       >
-        <td class="name-column">{{ prestador.nome }}</td>
+        <td class="nome">{{ prestador.nome }}</td>
         <td>{{ prestador.cpf }}</td>
         <td>{{ prestador.servico }}</td>
         <td>{{ prestador.empresa }}</td>
         <td>{{ prestador.destino }}</td>
+        <td>{{ prestador.dataHoraCreateUpdate }}</td>
       </tr>
     </tbody>
   </v-table>
@@ -73,9 +77,13 @@ import axios from 'axios';
   background-color:  rgb(220, 220, 220);
 }
 
-
-.name-column {
-  width: 400px;
+.nome {
+  width: 300px;
 }
+
+.dataHora {
+  width: 150px;
+}
+
 
 </style>

@@ -1,13 +1,19 @@
 <template>
   <div>
-    <h2>Excluir dados de visitante</h2>
-
     <div>
-      <h3>Apagar dados</h3>
+      <h3>Excluir dados de visitante</h3>
       <form @submit.prevent="excluirVisitantePorCpf">
-        <label for="cpfExcluir">Excluir por CPF: </label>
-        <input type="text" id="cpfExcluir" v-model="cpfExcluir" required />
-        <button type="submit">Excluir</button>
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="cpfExcluir" class="col-form-label">Excluir por CPF: </label>
+          </div>
+          <div class="col-auto">
+            <input type="text" id="cpfExcluir" class="form-control" v-model="cpfExcluir" required />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-danger">Excluir</button>
+          </div>
+        </div>
       </form>
     </div>
   </div>

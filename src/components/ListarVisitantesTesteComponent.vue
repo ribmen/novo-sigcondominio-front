@@ -13,8 +13,11 @@
         <th class="text-middle">
           CPF
         </th>
-        <th class="text-left">
+        <th class="text-middle">
           Destino
+        </th>
+        <th class="text-left">
+          Data e Hora
         </th>
       </tr>
     </thead>
@@ -26,6 +29,7 @@
         <td class="name-column">{{ visitante.nome }}</td>
         <td>{{ visitante.cpf }}</td>
         <td>{{ visitante.destino }}</td>
+        <td>{{ visitante.dataHoraCreateUpdate }}</td>
       </tr>
     </tbody>
   </v-table>

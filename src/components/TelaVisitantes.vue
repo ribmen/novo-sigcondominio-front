@@ -1,31 +1,5 @@
 <template>
   <div id="app">
-    <!-- Header -->
-    <header class="bg-dark py-3">
-      <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
-          <!-- Logo e título -->
-          <a href="/" class="d-flex align-items-center text-white text-decoration-none">
-            <img src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="Bootstrap Logo" width="30" height="24">
-            <span class="fs-4 mx-2">SIGCONDOMÍNIO</span>
-          </a>
-          
-          <!-- Navegação -->
-          <ul class="nav">
-            <li class="nav-item"><router-link to="/" class="nav-link text-white">Página Inicial</router-link></li>
-            <li class="nav-item"><router-link to="/visitantes" class="nav-link text-white">Buscar no Sistema</router-link></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white">Sobre</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white">Contato</a></li>
-          </ul>
-          
-          <!-- Botões de ação -->
-          <div>
-            <router-link to="/login" class="text-white text-decoration-none"><button class="btn btn-outline-light me-2">Sair</button></router-link>
-            <router-link to="/registro" class="text-white text-decoration-none"><button class="btn btn-primary">Registrar</button></router-link>
-          </div>
-        </div>
-      </div>
-    </header>
   
     <!-- Conteúdo principal -->
     <main class="container my-5">
@@ -59,7 +33,8 @@
               <h2 class="card-title m-0">Ações pontuais</h2>
             </div>
             <div class="card-body">
-              <DeleteVisitanteComponent/>
+              <DeleteVisitanteComponent/><br><br>
+              <AtualizarVisitanteComponent/>
             </div>
           </div>
         </div>
@@ -80,7 +55,12 @@
   </div>
 </template>
 
+
+
+
+
 <script>
+import AtualizarVisitanteComponent from './AtualizarVisitanteComponent.vue';
 import BuscarVisitanteComponent from './BuscarVisitanteComponent.vue';
 import DeleteVisitanteComponent from './DeleteVisitanteComponent.vue';
 
@@ -88,6 +68,7 @@ export default {
   name: 'TelaVisitantes',
   components: {
     BuscarVisitanteComponent,
+    AtualizarVisitanteComponent,
     DeleteVisitanteComponent
   },
   data() {
